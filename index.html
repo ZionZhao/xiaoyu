@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Pet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div class="video-container">
+            <video id="idle-video" class="active" autoplay loop></video>
+            <video id="pet-video" class="hidden" autoplay></video>
+        </div>
+        <div class="controls">
+            <button data-video="touch">摸一摸</button>
+            <button data-video="feed">喂零食</button>
+            <button data-video="play">扔飞盘</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
