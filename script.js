@@ -3,21 +3,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const idleVideo = document.getElementById('idle-video');
     const buttons = document.querySelectorAll('.controls button');
     
-    // 设置待机视频
-    idleVideo.src = 'videos/standby.mp4';
+    // 设置待机视频（优化版）
+    idleVideo.src = 'videos/standby_opt.mp4';
     
     // 交互按钮点击事件
     buttons.forEach(button => {
         button.addEventListener('click', () => {
             const videoName = button.getAttribute('data-video');
             
-            // 根据按钮类型设置对应的视频
+            // 根据按钮类型设置对应的视频（优化版）
             if (videoName === 'touch') {
-                petVideo.src = 'videos/touch.mp4';
+                petVideo.src = 'videos/touch_opt.mp4';
             } else if (videoName === 'feed') {
-                petVideo.src = 'videos/feed.mp4';
+                petVideo.src = 'videos/feed_opt.mp4';
             } else if (videoName === 'play') {
-                petVideo.src = 'videos/play.mp4';
+                petVideo.src = 'videos/play_opt.mp4';
             }
             
             // 隐藏待机视频，显示交互视频
