@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     const petVideo = document.getElementById('pet-video');
     const idleVideo = document.getElementById('idle-video');
-    const buttons = document.querySelectorAll('.controls button');
+    const buttons = document.querySelectorAll('.control-item');
     
-    // 设置待机视频（优化版）
+    // 设置待机视频
     idleVideo.src = 'videos/standby_opt.mp4';
     
     // 交互按钮点击事件
@@ -11,12 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
         button.addEventListener('click', () => {
             const videoName = button.getAttribute('data-video');
             
-            // 根据按钮类型设置对应的视频（优化版）
+            // 根据按钮类型设置对应的视频
             if (videoName === 'touch') {
                 petVideo.src = 'videos/touch_opt.mp4';
             } else if (videoName === 'feed') {
                 petVideo.src = 'videos/feed_opt.mp4';
-            } else if (videoName === 'play') {
+            } else if (videoName === 'plate') {
                 petVideo.src = 'videos/play_opt.mp4';
             }
             

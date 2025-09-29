@@ -53,15 +53,30 @@ body, html {
     border-top: 1px solid #eee;
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 16px;
+.control-item {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f8f8f8;
+    border: none;
+    border-radius: 8px;
+    background-color: #a8e6cf;
+    transition: all 0.3s ease;
 }
 
-button:hover {
-    background-color: #e8e8e8;
+.control-item:hover {
+    background-color: #88d8a3;
+    transform: scale(1.05);
+}
+
+.control-item:active {
+    transform: scale(0.95);
+}
+
+.control-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
 }
