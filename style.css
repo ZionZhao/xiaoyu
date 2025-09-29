@@ -62,16 +62,17 @@ body, html {
     cursor: pointer;
     border: none;
     border-radius: 8px;
-    background-color: #a8e6cf;
+    background-color: transparent;
     transition: all 0.3s ease;
 }
 
 .control-item:hover {
-    background-color: #88d8a3;
+    background-color: #a8e6cf;
     transform: scale(1.05);
 }
 
 .control-item:active {
+    background-color: #88d8a3;
     transform: scale(0.95);
 }
 
