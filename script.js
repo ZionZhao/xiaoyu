@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } else if (videoName === 'plate') {
                 petVideo.src = 'videos/play_opt.mp4';
             } else if (videoName === 'redbag') {
-                petVideo.src = 'videos/redbag.mp4';
+                petVideo.src = 'videos/redbag_opt.mp4';
             }
             
             // 隐藏待机视频，显示交互视频
